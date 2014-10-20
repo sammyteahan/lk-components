@@ -1,6 +1,6 @@
 ## LK-COMPONENTS
----
-<div style="float:right">Lightningkite</div>
+
+
 
 
 ###### Contents:
@@ -15,4 +15,4 @@ This packages is installed to the bower_components directory within the applicat
 
 and finally include them in our main module:
 
-angular.module('YourAppsName', ['lk.components'])
+	angular.module('YourAppsName', ['lk.components'])
