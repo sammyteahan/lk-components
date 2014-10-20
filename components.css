@@ -3,7 +3,8 @@
   display: inline-block;
   padding-left: 22px;
   color: #555;
-  cursor: pointer; }
+  cursor: pointer;
+  margin: 0 4px; }
   .lk-checkbox input {
     position: absolute;
     opacity: 0;
