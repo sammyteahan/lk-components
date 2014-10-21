@@ -19,3 +19,6 @@ This package is installed to the bower_components directory within the applicati
 and finally include them in our main module:
 
 	angular.module('YourAppsName', ['lk.components'])
+	
+	
+`note` - running bower install will install this package in a local bower_components directory unless a different location is specified in a local .bowerrc file
