@@ -24,7 +24,7 @@
     user-select: none;
     border-radius: .25rem; }
   .lk-checkbox input:checked ~ span {
-    background: #0074d9 url(http://placehold.it/6x6) no-repeat scroll 50%; }
+    background: #EEE url(component-assets/checkmark.png) no-repeat scroll 50%; }
 
 .lk-radio {
   position: relative;
