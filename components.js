@@ -3,8 +3,10 @@
 angular.module('lk.components', [])
 
 // .controller('ComponentCtrl', ['$scope', function ($scope) {
+	//
 	// No controller for components, we want to inject info from
 	// individual controllers in our main app's structure
+	//
 // }])
 
 .directive('lkHeader', [function () {
@@ -13,7 +15,7 @@ angular.module('lk.components', [])
 		replace: true,
 		templateUrl: 'bower_components/lk-angular-components/templates/header.tpl.html',
 		scope: {
-			title: "="
+			options: "="
 		},
 		link: function (scope, iElement, iAttrs) {
 		}
