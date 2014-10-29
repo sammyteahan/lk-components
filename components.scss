@@ -123,9 +123,8 @@
 /**
 * Fading banner styles
 */
-/**
-* #Mixins
-*/
+
+// #Mixins //
 @mixin delay($str) {
   -webkit-animation-delay: #{$str};
      -mos-animation-delay: #{$str};
