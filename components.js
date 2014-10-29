@@ -13,7 +13,7 @@ angular.module('lk.components', [])
 	return {
 		restrict: 'E',
 		replace: true,
-		templateUrl: 'bower_components/lk-angular-components/templates/header.tpl.html',
+		templateUrl: 'vendor/lk-angular-components/templates/header.tpl.html',
 		scope: {
 			options: "="
 		},
@@ -26,7 +26,7 @@ angular.module('lk.components', [])
 	return {
 		restrict: 'E',
 		replace: true,
-		templateUrl: 'bower_components/lk-angular-components/templates/sidebar.tpl.html',
+		templateUrl: 'vendor/lk-angular-components/templates/sidebar.tpl.html',
 		scope: {
 			options: '='
 		},
@@ -40,7 +40,7 @@ angular.module('lk.components', [])
 	return {
 		restrict: 'E',
 		replace: true,
-		templateUrl: 'bower_components/lk-angular-components/templates/checkbox.tpl.html',
+		templateUrl: 'vendor/lk-angular-components/templates/checkbox.tpl.html',
 		scope: {
 			options: "="
 		},
@@ -54,7 +54,7 @@ angular.module('lk.components', [])
 	return {
 		restrict: 'E',
 		replace: true,
-		templateUrl: 'bower_components/lk-angular-components/templates/radio.tpl.html',
+		templateUrl: 'vendor/lk-angular-components/templates/radio.tpl.html',
 		scope: {
 			options: "="
 		},
@@ -69,12 +69,26 @@ angular.module('lk.components', [])
 	return {
 		restrict: 'E',
 		replace: true,
-		templateUrl: 'bower_components/lk-angular-components/templates/select.tpl.html',
+		templateUrl: 'vendor/lk-angular-components/templates/select.tpl.html',
 		scope: {
 			options: "="
 		},
 		link: function (scope, iElement, iAttrs) {
 
+		}
+	};
+}])
+
+.directive('fadingBanner', [function () {
+	return {
+		restrict: 'E',
+		replace: true,
+		templateUrl: 'vendor/lk-angular-components/templates/fadingbanner.tpl.html',
+		scope: {
+			images: '='
+		},
+		link: function (scope, iElement, iAttrs) {
+			
 		}
 	};
 }]);

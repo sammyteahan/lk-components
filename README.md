@@ -33,6 +33,9 @@ The goal was to have each directive be dependent upon the modules controller int
 
 	})
 
+	/**
+	* In our template
+	*/
 	<div class="lk-wrapper">
 	  <div class="lk-content">
 

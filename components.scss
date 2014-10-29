@@ -119,3 +119,97 @@
   background: #F2F2F2;
   width: 150px;
 }
+
+/**
+* Fading banner styles
+*/
+/**
+* #Mixins
+*/
+@mixin delay($str) {
+  -webkit-animation-delay: #{$str};
+     -mos-animation-delay: #{$str};
+      -ms-animation-delay: #{$str};
+       -o-animation-delay: #{$str};
+          animation-delay: #{$str};
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+     -moz-animation: #{$str};
+      -ms-animation: #{$str};
+       -o-animation: #{$str};
+          animation: #{$str};      
+}
+
+.wrap-fading-banner {
+  height: 350px;
+  position: relative;
+}
+  
+  %bg {
+    height: 100%;
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    @include animation(fade 15s ease infinite);
+  }
+  
+  .bg-1 {
+    @extend %bg; //lets try and keep our code dry shall we?
+    background: url(component-assets/screen1.jpg) no-repeat center;
+    background-size: cover;
+    @include delay(10s);
+  }
+
+  .bg-2 {
+    @extend %bg;
+    background: url(component-assets/screen2.jpg) no-repeat center;
+    background-size: cover;
+    @include delay(5s);
+  }
+
+  .bg-3 {
+    @extend %bg;
+    background: url(component-assets/screen3.jpg) no-repeat center;
+    background-size: cover;
+    @include delay(0s);
+  }
+
+/**
+* #Keyframes Animations
+*/
+@include keyframes(fade) {
+  0%     { opacity: 1; }
+  12.5%  { opacity: 1; }
+  25%    { opacity: 1; }
+  37.5%  { opacity: 0; }
+  50%    { opacity: 0; }
+  62.5%  { opacity: 0; }
+  75%    { opacity: 0; }
+  87.5%  { opacity: 0; }
+  100%   { opacity: 1; }
+}
+
+// We need the mixin below the use of it above because of the
+// @content rule. Defining the mixin above the @include breaks
+// the slider.
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

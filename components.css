@@ -106,3 +106,51 @@
   height: 100%;
   background: #F2F2F2;
   width: 150px; }
+
+.wrap-fading-banner {
+  
+}
+
+  .bg-1, .bg-2, .bg-3 {
+  height: 100%;
+  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-animation: fade 15s ease infinite;
+  -moz-animation: fade 15s ease infinite;
+  -ms-animation: fade 15s ease infinite;
+  -o-animation: fade 15s ease infinite;
+  animation: fade 15s ease infinite;
+}
+
+.bg-1 {
+  background: url(http://placekitten.com/1400/350) no-repeat center;
+  background-size: cover;
+  -webkit-animation-delay: 10s;
+  -mos-animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.bg-2 {
+  background: url(http://placekitten.com/1800/350) no-repeat center;
+  background-size: cover;
+  -webkit-animation-delay: 5s;
+  -mos-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.bg-3 {
+  background: url(http://placekitten.com/1900/350) no-repeat center;
+  background-size: cover;
+  -webkit-animation-delay: 0s;
+  -mos-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
